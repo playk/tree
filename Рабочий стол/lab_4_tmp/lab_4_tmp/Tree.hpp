@@ -1,11 +1,11 @@
 #include "Element.hpp"
 
-class Tree          /// Класс "дерево"
+class Tree          //Tree class description
 {
 public:
 	      Tree();
 		  ~Tree();
-	void     Add_Element(int Number, int Value);  /// Метод добавления узла к дереву	
+	void     Add_Element(int Number, int Value);  // method that would add a new element to a tree	
 	void     Print_Tree()   const;
 	int      Get_Data(int Number) const;
 
@@ -17,5 +17,5 @@ private:
 	Element* Find_Element(Element* El,int Number) const;
 
 private:
-	Element* Root;  /// указатель на корень дерева
-};
+	Element* Root;  // The root element saves here
+}
