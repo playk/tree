@@ -1,6 +1,6 @@
 #include "Tree.hpp"
 
-//! Реализация методов Класса "Дерево"
+// tree initialization method
 Tree::Tree()
 {
 	Root = new Element;
@@ -79,11 +79,11 @@ void Tree::Print_Symmetrical(Element* El) const
 }
 void Tree::Print_Tree() const
 {
-	cout<<"---------Direct  Bypass-----------"<<endl;
+	cout<<"Direct bypass:"<<endl;
 	Print_Direct(Root);
-	cout<<"---------Reverse  Bypass-----------"<<endl;
+	cout<<"Reverse  bypass:"<<endl;
 	Print_Reverse(Root);
-	cout<<"---------Symmetrical  Bypass-----------"<<endl;
+	cout<<"Symmetrical  bypass:"<<endl;
 	Print_Symmetrical(Root);
 	return;
 }
