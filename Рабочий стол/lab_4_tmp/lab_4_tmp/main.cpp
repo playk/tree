@@ -2,7 +2,7 @@
 
 int main()
 {
-	Tree treee;    //! Объект класса "дерево"
+	Tree tr;    //Init tree here
 	unsigned int Number, ElNum;
 	int Value;
 	cout<<"Enter number of points: ";
@@ -10,10 +10,10 @@ int main()
 	for(int itr = 0; itr < ElNum; itr++)
 	{
 		cin>>Number>>Value;
-		treee.Add_Element(Number, Value);
+		tr.Add_Element(Number, Value);
 	}
 	
-	treee.Print_Tree();  //! вывод дерева на экран
+	tr.Print_Tree();  //printing tree here with 3 methods
 	system("pause");
 	return 0;
 }
