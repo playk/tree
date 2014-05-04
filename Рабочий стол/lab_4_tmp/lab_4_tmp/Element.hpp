@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-class Element      /// Класс узла дерева
+class Element      // the element class
 {
 public:
 	Element();
@@ -11,6 +11,6 @@ public:
 public:
 	int               data;
 	Element*          parent;
-	vector<Element*>  childVector;  ///Массив "детей" узла дерева
+	vector<Element*>  childVector;  // child element of the higher one
 
 };
